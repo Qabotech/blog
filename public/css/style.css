@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    --shadow-: #753c8bb7;
+    --main-bgc: #753C8B;
+    --sec-bgc: #17162f;
+    --font-black: #000;
+    --font-white: #fff;
+    --font-gold: gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none !important;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.end-start {
+    margin: 5em 0;
+}
+
+.start {
+    margin-top: 5em;
+}
+
+.end {
+    margin-bottom: 5em;
+}
+
+.F400 {
+    font-weight: 400;
+}
+
+.nav {
+    display: flex;
+    background: var(--main-bgc);
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav>div {
+    display: flex;
+    gap: 1em;
+    padding: 0 2em;
+
+}
+
+.nav a {
+    color: var(--font-white);
+}
+
+.nav a:hover {
+    color: var(--font-gold);
+}
+
+.logo {
+    font-size: 2em;
+
+}
+
+footer {
+    display: flex;
+    background: var(--sec-bgc);
+    color: var(--font-white);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    min-height: 15vh;
+}
+
+footer h5 {
+    font-size: 1.5em;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.hero {
+    color: #fff;
+    background: url('https://images.unsplash.com/photo-1557264322-b44d383a2906?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center center /cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    text-transform: uppercase;
+}
+
+
+input, textarea {
+    text-align: left !important;
+}
+
+.form-control:focus {
+    background-color: #f8fafc;
+    border-color: var(--sec-bgc);
+    box-shadow: 0 0 0 0.25rem var(--shadow-);
+    text-align: left !important;
+}
+
+.button {
+    background: #753C8B;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+.cont {
+    width: 100vw;
+}
+
+.cont .paragraph {
+    width: 60vw;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.cont .paragraph img {
+    width: 100%;
+    height: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.cont .paragraph>h3 {
+    font-size: 2em;
+}
+
+.cont .paragraph>p {
+    font-size: 1.3em;
+}
+
+.blogCatWrapper {
+    height: 50vh;
+    background: var(--sec-bgc);
+    color: var(--font-white);
+    justify-content: space-evenly;
+
+}
+
+.blogCat {
+    gap: 5vw;
+}
+
+.blogCat-head {
+    font-weight: 400;
+}
+
+.post {
+    gap: 1em;
+}
+
+.post img {
+    width: 100%;
+    height: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.post {
+    width: 60vw;
+}
+
+
+
+.post p.text {
+    background: var(--sec-bgc);
+    color: var(--font-white);
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 100%;
+}
+
+.post p.text .cat-block {
+    background: var(--main-bgc);
+    color: var(--font-white);
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 30%;
+    border-radius: 1em;
+    margin: auto;
+}
+
+.post p.text .button {
+    width: 30%;
+    margin: 1em auto;
+}
+
+.post:nth-child(1) {
+    border-top: 0 !important;
+}
+
+.post {
+    border-top: 0.1px solid black;
+}
+
+.add_post {
+    width: 60vw;
+    gap: 1em;
+    min-height: 75vh;
+}
+
+.add_post textarea {
+    resize: none;
+    height: 20em;
+}
+
+.msg {
+    -webkit-animation: fade-out 1s ease-out 3s both;
+    animation: fade-out 1s ease-out 3s both;
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .post,
+    .cont .paragraph {
+        width: 90vw;
+    }
+}
